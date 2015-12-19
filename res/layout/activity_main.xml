@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="#333333"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="崔维友"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <com.cuiweiyou.allsidesscrolllistview.UHorizontalScrollView
+            android:id="@+id/hsv1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="#339966"
+            android:scrollbars="horizontal" >
+
+            <TextView
+			    style="?android:attr/dropDownItemStyle"
+			    android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+			    android:singleLine="true"
+			    android:layout_width="match_parent"
+			    android:layout_height="?android:attr/listPreferredItemHeight"
+			    android:ellipsize="marquee" 
+                android:gravity="center"
+                android:text="1234567890098765432112345678900987654321qazwsxedcrfvtgvbyhnujm" />
+        </com.cuiweiyou.allsidesscrolllistview.UHorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:background="#999999"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/lv1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <com.cuiweiyou.allsidesscrolllistview.UHorizontalScrollView
+            android:id="@+id/hsv2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="#ff3399"
+            android:scrollbars="horizontal" >
+
+            <ListView
+                android:id="@+id/lv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.cuiweiyou.allsidesscrolllistview.UHorizontalScrollView>
+    </LinearLayout>
+
+</LinearLayout>
